@@ -7,10 +7,10 @@ import math
 #y[] = lista de valores y nos pontos correspondentes
 # a quantidade de valores na Lista y deve ser igual ao valor de n
 def calc():
-    n = 8
+    n = 10
     j = 1
     x = []
-    y = [21, 26, 37, 32, 39, 31, 40, 42]
+    y = [15, 18, 12, 12, 20, 14, 18, 17, 14, 20]
 
     for i in range (n):
         x.append(i+j)
@@ -37,7 +37,8 @@ def calc():
     #calcula a e b da equação da reta (regressão linear)
     denominador = ((n * somXquad) - (somX ** 2))
     a = ((somXquad * somY) - (somX * somXY)) / denominador
-    b = ((n * somXY) - (somX * somY)) / denominador
+    nominadorB = (n * somXY) - (somX * somY)
+    b = nominadorB / denominador
 
     print("\na = {} \nb = {}\n".format(a, b))
     print("Equação da reta:\nY = {} + {}x\n".format(a, b))
@@ -48,8 +49,8 @@ def calc():
     print("Portanto, para o proximo ponto (x = {}), estima-se:\n y = {}\n".format(proxPontoX, proxPontoY))
 
     #calcula fator de correlação
-    denominador = math.sqrt(((n*somXquad) - (somX **2)) * ((n * somYquad) - (somY **2)))
-    r = ((n * somXY) - (somX * somY)) / denominador
+    denominador = math.sqrt((denominador) * ((n * somYquad) - (somY **2)))
+    r = (nominadorB) / (denominador)
     print("Fator de correlação r = {}".format(r))
 
     if(r>0.7):
