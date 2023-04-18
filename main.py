@@ -16,6 +16,7 @@ def calc():
     x = []
     y = [11, 20, 51, 22, 13, 31, 60, 28, 12, 39, 62, 40, 23, 25, 88, 45]
 
+    #caso haja necessidade de calcular Fator de Sazonalidade
     FsBloco = 1
     FsCiclo = 4
     FsOffset = 1
@@ -85,10 +86,11 @@ def calc():
         print("Portanto, calculando o fator de sazonalidade:")
         print("P = {}".format(P))
         print("Ft = {}\n".format(Ft))
-        Fs = somFt/(FsCiclo * FsBloco)
+        ciclos = n/FsCiclo
+        Fs = somFt/(ciclos * FsBloco)
         print("Fs = {}\n".format(Fs))
 
-        DadoCorrigidoComFs = proxPontoY*Fs
+        DadoCorrigidoComFs = proxPontoY * Fs
         print("Valor no ponto x = {} corrigido pelo Fator de Sazonalidade:".format(proxPontoX))
         print(DadoCorrigidoComFs)
         print("\n\n\n")
