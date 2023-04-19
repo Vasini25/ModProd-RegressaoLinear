@@ -81,7 +81,7 @@ def calc():
 
             if ((i+1) % FsCiclo == 0):
                 contador = 0
-                offset += FsBloco
+                offset += FsCiclo
 
         print("Portanto, calculando o fator de sazonalidade:")
         print("P = {}".format(P))
