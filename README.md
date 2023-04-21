@@ -20,7 +20,7 @@ com as quais nos depararemos ao avançar dos estudos em PCP.
 Em se tratando da previsão, podemos nos apoiar em dados (gráficos e/ou tabelas da demanda com o passar de peíodos <br>
 de tempo, aos quais damos o nome de "Séries Temporais") que são separados em duas categorias:
 
-- Séries Temporais Estacionárias:
+**- Séries Temporais Estacionárias:**
 	Séries em que não há aumento ou diminuição considerável ao logo do tempo, ou seja, em que a tendência da<br>
 	demanda é flutuar em torno de uma reta de tendẽncia bem definida.
 	Para este tipo de série, o mais comum é utilizar alguns métodos, em especial, os diferentes métodos de<br>
@@ -28,7 +28,7 @@ de tempo, aos quais damos o nome de "Séries Temporais") que são separados em d
 	pode ter um resultado mais preciso e confiável.
 	Também são comuns de entrarem nesta classificação séries temporais com poucos dados.
 
--Séries Temporais Não Estácionárias:
+**- Séries Temporais Não Estácionárias:**
 	Necessitam de uma quantidade minimamente considerável de dados de demanda em períodos passados.
 	Caracterizam-se por apresentar ascenção ou declíneo no "nível médio" (tendência) das vendas.
 	Neste caso a reta de tendência será bem definida, inclusive porque, definí-la faz parte do processo<br>
