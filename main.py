@@ -9,12 +9,13 @@ import math
 # a quantidade de valores na Lista y deve ser igual ao valor de n
 
 #A partir de do valor 'FsOffset', considerar os 'FsBloco' primeiros valores num ciclo de 'FsCiclo' valores (default = 1, 1, 1)
-def calc():
-    n = 16
+def regressaoLinear(y, proxPontoX):
+    n = 0
+    n = len(y)
     j = 1
-    proxPontoX = n+1
+    #proxPontoX = n+1
     x = []
-    y = [11, 20, 51, 22, 13, 31, 60, 28, 12, 39, 62, 40, 23, 25, 88, 45]
+    #y = [11, 20, 51, 22, 13, 31, 60, 28, 12, 39, 62, 40, 23, 25, 88, 45]
 
     #caso haja necessidade de calcular Fator de Sazonalidade
     FsBloco = 1
@@ -98,4 +99,5 @@ def calc():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    calc()
+    y = [11, 20, 51, 22, 13, 31, 60, 28, 12, 39, 62, 40, 23, 25, 88, 45]
+    regressaoLinear(y, 17)
