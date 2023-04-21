@@ -56,7 +56,4 @@ de tempo, aos quais damos o nome de "Séries Temporais") que são separados em d
 	são chamados de "Aleatoriedade"
 	
 
-### Neste programa, abordaremos o método da regressão linear, com uma função que demanda uma lista de valores de 
-demandas anteriores de quantidade variável, e o valor numérico do ponto para p qual se deseja encontrar 
-a previsão da demanda. Caso haja fator de sazonalidade, ele é calculado (feature funcionando perfeitamente, mas 
-não devidamente implementada para uso a partir da main, pois necessita de um preset).
+### Neste programa, abordaremos o método da regressão linear, com uma função que demanda uma lista de valores de demandas anteriores de quantidade variável, e o valor numérico do ponto para p qual se deseja encontrar a previsão da demanda. Caso haja fator de sazonalidade, ele é calculado (feature funcionando perfeitamente, mas não devidamente implementada para uso a partir da main, pois necessita de um preset).
