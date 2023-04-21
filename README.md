@@ -5,7 +5,7 @@
 #### Programa em Python para calcular, dada um conjunto de pontos de uma série temporal não estacionária, a previsão do próximo ponto, calculada utilizando regressão linear.
 
 Ao estudar Modelagem da Produção e as respectivas atividades de Planejamento e Controle da Produção (PCP), um dos<br>
-um dos primeiros conceitos com o qual nos defrontamos é o planejamento da demanda futura.
+primeiros conceitos com o qual nos defrontamos é o planejamento da demanda futura.<br>
 Para tal, há métodos para predição, onde se tenta estimar qual será a demanda do seu produto produzido ou serviço<br>
 oferecido no primeiro período de todos, quando não há dados históricos aos quais se comparar e analisar.
 
@@ -22,10 +22,10 @@ de tempo, aos quais damos o nome de "Séries Temporais") que são separados em d
 
 **- Séries Temporais Estacionárias:**
 	Séries em que não há aumento ou diminuição considerável ao logo do tempo, ou seja, em que a tendência da<br>
-	demanda é flutuar em torno de uma reta de tendẽncia bem definida.
+	demanda é flutuar em torno de uma reta de tendẽncia bem definida.<br>
 	Para este tipo de série, o mais comum é utilizar alguns métodos, em especial, os diferentes métodos de<br>
 	médias móveis, aplicando-se os diferentes tipos de cálculos de Erro a cada uma delas, verificando qual<br>
-	pode ter um resultado mais preciso e confiável.
+	pode ter um resultado mais preciso e confiável.<br>
 	Também são comuns de entrarem nesta classificação séries temporais com poucos dados.
 
 **- Séries Temporais Não Estácionárias:**
@@ -56,7 +56,7 @@ de tempo, aos quais damos o nome de "Séries Temporais") que são separados em d
 	são chamados de "Aleatoriedade"
 	
 
-####Neste programa, abordaremos o método da regressão linear, com uma função que demanda uma lista de valores<br>
+#### Neste programa, abordaremos o método da regressão linear, com uma função que demanda uma lista de valores<br>
 de demandas anteriores de quantidade variável, e o valor numérico do ponto para p qual se deseja encontrar<br>
 a previsão da demanda. Caso haja fator de sazonalidade, ele é calculado (feature funcionando perfeitamente, mas <br>
 não devidamente implementada para uso a partir da main, pois necessita de um preset)
