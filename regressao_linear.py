@@ -35,10 +35,10 @@ def regressaoLinear(y, proxPontoX):
 
     somX = sum(x)
     somY = sum(y)
+    somXquad = sumQuad(x)
+    somYquad = sumQuad(y)
 
     for i in range (n):
-        somXquad += x[i] **2
-        somYquad += y[i] **2
         somXY += x[i] * y[i]
 
     print("\nSomatorios: \nx = {} \nx^2 = {} \ny = {} \ny^2 = {} \nx*y = {}".format(somX, somXquad, somY, somYquad, somXY))
@@ -95,6 +95,7 @@ def regressaoLinear(y, proxPontoX):
         print(DadoCorrigidoComFs)
         print("\n\n\n")
 
+#gera vetor (Lista) de pontos x
 def geraX(n, j):
     x = []
 
@@ -103,6 +104,7 @@ def geraX(n, j):
 
     return x
 
+#retorna somatorio de um vetor
 def sum(vector):
     n = len(vector)
     somatorio = 0
@@ -111,5 +113,15 @@ def sum(vector):
         somatorio += vector[i]
 
     return somatorio
+
+def sumQuad(vector):
+    n = len(vector)
+    somatorio = 0
+
+    for i in range(n):
+        somatorio += (vector[i] ** 2)
+
+    return somatorio
+
 #calcula a e b da equação da reta (regressão linear)
 #def calcA():
