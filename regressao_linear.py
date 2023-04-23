@@ -47,7 +47,7 @@ def regressaoLinear(y, proxPontoX, FsBloco, FsCiclo, FsOffset):
     print("Portanto, para o proximo ponto (x = {}), estima-se:\n y = {}\n".format(proxPontoX, proxPontoY))
 
     #calcula fator de correlação
-    denominador = math.sqrt(denominador * ((n * somYquad) - (somY **2)))
+    denominador = denominador_R(n, denominador, somY, somYquad)
     r = (nominadorB) / (denominador)
     print("Fator de correlação r = {}".format(r))
 
@@ -141,3 +141,9 @@ def nominador_B(n, somX, somY, somXY):
     nominador = (n * somXY) - (somX * somY)
 
     return nominador
+
+#calcula denominador para calculo de 'r'
+def denominador_R(n, denominador, somY, somYquad):
+    denominadorR = math.sqrt(denominador * ((n * somYquad) - (somY ** 2)))
+
+    return denominadorR
