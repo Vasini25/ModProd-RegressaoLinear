@@ -33,10 +33,11 @@ def regressaoLinear(y, proxPontoX):
     somYquad = 0
     somXY = 0
 
+    somX = sum(x)
+    somY = sum(y)
+
     for i in range (n):
-        somX += x[i]
         somXquad += x[i] **2
-        somY += y[i]
         somYquad += y[i] **2
         somXY += x[i] * y[i]
 
@@ -102,5 +103,13 @@ def geraX(n, j):
 
     return x
 
+def sum(vector):
+    n = len(vector)
+    somatorio = 0
+
+    for i in range(n):
+        somatorio += vector[i]
+
+    return somatorio
 #calcula a e b da equação da reta (regressão linear)
 #def calcA():
