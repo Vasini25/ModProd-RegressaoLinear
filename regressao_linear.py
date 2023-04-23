@@ -8,10 +8,9 @@ import math
 # a quantidade de valores na Lista y deve ser igual ao valor de n
 
 #A partir de do valor 'FsOffset', considerar os 'FsBloco' primeiros valores num ciclo de 'FsCiclo' valores (default = 1, 1, 1)
-def regressaoLinear(y, proxPontoX, FsBloco, FsCiclo, FsOffset):
+def regressaoLinear(y, proxPontoX, j, FsBloco, FsCiclo, FsOffset):
     n = 0
     n = len(y)
-    j = 1
     x = []
 
     #caso haja necessidade de calcular Fator de Sazonalidade
