@@ -35,11 +35,9 @@ def regressaoLinear(y, proxPontoX):
 
     somX = sum(x)
     somY = sum(y)
+    somXY = mpAndSum(x, y)
     somXquad = sumQuad(x)
     somYquad = sumQuad(y)
-
-    for i in range (n):
-        somXY += x[i] * y[i]
 
     print("\nSomatorios: \nx = {} \nx^2 = {} \ny = {} \ny^2 = {} \nx*y = {}".format(somX, somXquad, somY, somYquad, somXY))
 
@@ -114,6 +112,17 @@ def sum(vector):
 
     return somatorio
 
+#retorna somatorio da multiplicação de dois elementos equivalentes de dois vetors
+def mpAndSum(vector1, vector2):
+    n = len(vector1)
+    somatorio = 0
+
+    for i in range(n):
+        somatorio += (vector1[i] * vector2[i])
+
+    return somatorio
+
+#retorna somatorio dos valores ao quadrado de um vetor
 def sumQuad(vector):
     n = len(vector)
     somatorio = 0
