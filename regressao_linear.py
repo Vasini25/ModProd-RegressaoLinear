@@ -35,8 +35,8 @@ def regressaoLinear(y, proxPontoX, FsBloco, FsCiclo, FsOffset):
 
     #calcula a e b da equação da reta (regressão linear)
     denominador = denominadorComum(n, somX, somXquad)
-    a = nominadorA(somX, somY, somXY, somXquad) / denominador
-    nominadorB = (n * somXY) - (somX * somY)
+    a = nominador_A(somX, somY, somXY, somXquad) / denominador
+    nominadorB = nominador_B(n, somX, somY, somXY)
     b = nominadorB / denominador
 
     print("\na = {} \nb = {}\n".format(a, b))
@@ -131,7 +131,13 @@ def denominadorComum(n, somX, somXquad):
     return denominador
 
 #calcula 'a' da equação da reta (regressão linear)
-def nominadorA(somX, somY,  somXY, somXquad):
+def nominador_A(somX, somY,  somXY, somXquad):
     nominador = ((somXquad * somY) - (somX * somXY))
+
+    return nominador
+
+#calcula 'b' da equação da reta (regressão linear)
+def nominador_B(n, somX, somY, somXY):
+    nominador = (n * somXY) - (somX * somY)
 
     return nominador
